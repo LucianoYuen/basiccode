@@ -12,7 +12,7 @@ uint8_t aTxBuffer[] = " ****I2C_TwoBoards communication based on Polling****  **
 
 int main(void) {
  
-	printf("EEPROM_Buffer[1]的值：%d\n", TXBUFFERSIZE);
+	printf("TXBUFFERSIZE的值：%d\n", TXBUFFERSIZE);
  
 	return 0;
 }
