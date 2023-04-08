@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h> //uint8_t
+
+uint16_t port_value = 61455;
+
+uint8_t val = 0;
+uint8_t val2 = 0;
+
+int main(void) {
+
+val = (port_value &= 0xFFFF);
+printf("pin_mask的值：%d\n", val); //First 8 Bit
+
+val2 = (port_value >> 8);
+printf("pin_mask的值：%d\n", val2); //Second 8 Bit
+}
